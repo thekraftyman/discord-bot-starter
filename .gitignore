@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+CHANGELOG.html
+tmp/*
+env/*
+venv/*
+*.bak
