@@ -16,7 +16,7 @@ After that, you'll want to supply an authentication token in the `auth.json` fil
 
 Finally, you'll want to make the bot auto-run. For example, if you are running on a linux system, you can use cron to run the bot by adding this line to your crontab:
 ```
-@reboot sudo sleep 60 && python3 ~/discord-bot/main.py
+@reboot sudo sleep 60 && cd ~/discord-bot/ && python3 main.py
 ```
 *note: this assumes your bot is in your home directory and you've titled it "discord-bot"*
 
