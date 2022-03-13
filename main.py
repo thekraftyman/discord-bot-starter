@@ -24,7 +24,7 @@ def main():
     # load the modules into the client
     for module in modules:
         try:
-            client.load_extension(f'modules.{module}')
+            client.load_extension(f'src.cogs.{module}')
             loaded.append(module)
         except Exception as error:
             print('{} could not be loaded: [{}]'.format(module,error))

@@ -12,7 +12,6 @@ import random
 class Bot_Responses(commands.Cog):
     def __init__(self,client):
         self.client = client
-        self.generic_responses = import_generic_responses()
         self.default_name = load_config()["bot_name"]
 
     # ---------------------------
@@ -21,9 +20,6 @@ class Bot_Responses(commands.Cog):
     # default reponses
     @commands.Cog.listener() # for use with events
     async def on_message(self, message):
-
-        # add role moderation here
-        await self.role_moderation_react( message )
 
         # skip if the bot said it (no loops)
         if message.author == self.client.user:
